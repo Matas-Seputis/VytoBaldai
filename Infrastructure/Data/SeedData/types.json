@@ -1,0 +1,42 @@
+[
+  {
+    "Id": 1,
+    "Name": "Kampai"
+  },
+  {
+    "Id": 2,
+    "Name": "Baro kėdė"
+  },
+  {
+    "Id": 3,
+    "Name": "Stalai su taburetėmis"
+  },
+  {
+    "Id": 4,
+    "Name": "Komplektai"
+  },
+  {
+    "Id": 5,
+    "Name": "Kėdės"
+  },
+  {
+    "Id": 6,
+    "Name": "Pietų stalai"
+  },
+  {
+    "Id": 7,
+    "Name": "Suolas"
+  },
+  {
+    "Id": 8,
+    "Name": "Stalas"
+  },
+  {
+    "Id": 9,
+    "Name": "Stalas ir suolai"
+  },
+  {
+    "Id": 10,
+    "Name": "Vaikiška lovytė"
+  }
+]

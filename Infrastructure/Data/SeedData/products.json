@@ -1,0 +1,74 @@
+[
+  {
+    "Name": "Kampas Akis",
+    "Description": "Gaminame pagal išmatavimus, pasirinktą gobeleno ir dermantino spalvą. Standartiniai kampo išmatavimai 1,30 x 1,60m",
+    "Price": 250,
+    "PictureUrl": "images/products/sb-ang1.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Tekinta baro kėdė",
+    "Description": "Gaminame pagal išmatavimus",
+    "Price": 100,
+    "PictureUrl": "images/products/sb-ang2.png",
+    "ProductTypeId": 2,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Svetainės stalas su kėdėmis",
+    "Description": "Gaminame pagal pasirinkto laminato, gobeleno spalvą, išmatavimus bei pasirinktą kėdžių modelį. Standartiniai stalo išmatavimai: plotis 850mm, ilgis 1700mm (+400 intarpas)",
+    "Price": 180,
+    "PictureUrl": "images/products/sb-core1.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Tekinta kėdė",
+    "Description": "Gaminame pagal išmatavimus, pasirinktą medienos bei gobeleno ar dermantino spalvą",
+    "Price": 300,
+    "PictureUrl": "images/products/sb-core2.png",
+    "ProductTypeId": 5,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Stalas ir suolai",
+    "Description": "Gaminame pagal išmatavimus ir pasirinktos medienos rūšį (uosis, ąžuolas, pušis)",
+    "Price": 250,
+    "PictureUrl": "images/products/sb-react1.png",
+    "ProductTypeId": 9,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "Suolas",
+    "Description": "Gaminame pagal išmatavimus ir pasirinktos medienos rūšį (uosis, ąžuolas, pušis)",
+    "Price": 120,
+    "PictureUrl": "images/products/sb-ts1.png",
+    "ProductTypeId": 7,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "Pietų stalas tekintomis kojomis",
+    "Description": "Gaminame pagal išmatavimus ir pasirinkto laminato spalvą.",
+    "Price": 10,
+    "PictureUrl": "images/products/hat-core1.png",
+    "ProductTypeId": 6,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Vaikiška lovytė-lopšiukas",
+    "Description": "Nauja, natūralios uosio medienos lovytė-lopšiukas, čiužinuko matmenys 42X90 cm, aukštis lopšiuko 45 cm. Sūpuojasi, galima užtvirtinti kaiščiu, kad nesisūpuotu. Lovytės kojytės ant ratuku",
+    "Price": 80,
+    "PictureUrl": "images/products/hat-react1.png",
+    "ProductTypeId": 10,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Tekintas stalas su taburetėmis",
+    "Description": "Gaminame pagal išmatavimus, pasirinktą plastiko spalvą (bukas, šv. ąžuolas, vyšnia). Stalviršio (plastiko) kraštai ir kojos iš uosio.",
+    "Price": 159,
+    "PictureUrl": "images/products/hat-react2.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 1
+  }
+]
