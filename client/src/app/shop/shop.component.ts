@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IBrand } from '../shared/models/brand';
 import { IProduct } from '../shared/models/product';
 import { IType } from '../shared/models/productType';
+import { ShopParams } from '../shared/models/shopParams';
 import { ShopService } from './shop.service';
 
 @Component({
@@ -13,8 +14,12 @@ export class ShopComponent implements OnInit {
   products: IProduct[];
   brands: IBrand[];
   types: IType[];
-  brandIdSelected: number;
-  typeIdSelected: number;
+  shopParams = new ShopParams();
+  totalCount: number;
+  sortOptions = [
+    {name: 'Kaina: Maziausia - Didziausia', value: 'priceAsc'},
+    {name: 'Kaina: Didziausia - Maziausia', value: 'priceDesc'}
+  ];
 
   constructor(private shopService:ShopService) {}
 
@@ -25,8 +30,11 @@ export class ShopComponent implements OnInit {
   }
 
   getProducts(){
-    this.shopService.getProducts(this.brandIdSelected, this.typeIdSelected).subscribe(response => {
-      this.products = response!.data;
+    this.shopService.getProducts(this.shopParams).subscribe(response => {
+      this.products = response.data;
+      this.shopParams.pageNumber = response.pageIndex;
+      this.shopParams.pageSize = response.pageSize;
+      this.totalCount = response.count;
     }, error => {
       console.log(error);
     });
@@ -49,12 +57,27 @@ export class ShopComponent implements OnInit {
   }
 
   onBrandSelected(brandId:number) {
-    this.brandIdSelected = brandId;
+    this.shopParams.brandId = brandId;
+    this.shopParams.pageNumber = 1;
     this.getProducts();
   }
 
   onTypeSelected(typeId: number) {
-    this.typeIdSelected = typeId;
+    this.shopParams.typeId = typeId;
+    this.shopParams.pageNumber = 1;
     this.getProducts();
+  }
+
+  onSortSelected(sort: string) {
+    this.shopParams.sort = sort;
+    this.getProducts();
+  }
+
+  onPageChanged(event: any) {
+    if (this.shopParams.pageNumber !== event) {
+      this.shopParams.pageNumber = event;
+      this.getProducts();
+    }
+    
   }
 }

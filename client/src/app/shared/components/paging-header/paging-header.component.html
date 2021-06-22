@@ -1,0 +1,15 @@
+<header>
+    <span *ngIf="totalCount && totalCount > 0">
+      Rodoma
+      <strong>
+        {{(pageNumber -1) * pageSize +1}} -
+        {{pageNumber * pageSize
+          > this.totalCount 
+          ? this.totalCount
+          : pageNumber * pageSize
+        }}
+      </strong> is <strong>{{this.totalCount}}</strong> Produktu</span>
+      <span *ngIf="totalCount === 0">
+        Naudojant si filtra, rasta <strong>0</strong> Produktu
+      </span>
+  </header>
