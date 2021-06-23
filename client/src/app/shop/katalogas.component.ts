@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { ShopService } from './shop.service';
 import { IBrand } from '../shared/models/brand';
 import { IProduct } from '../shared/models/product';
 import { IType } from '../shared/models/productType';
 import { ShopParams } from '../shared/models/shopParams';
-import { ShopService } from './shop.service';
 
 @Component({
-  selector: 'app-shop',
-  templateUrl: './shop.component.html',
-  styleUrls: ['./shop.component.scss']
+  selector: 'app-katalogas',
+  templateUrl: './katalogas.component.html',
+  styleUrls: ['./katalogas.component.scss']
 })
-export class ShopComponent implements OnInit {
+export class KatalogasComponent implements OnInit {
+
   products: IProduct[];
   brands: IBrand[];
   types: IType[];
