@@ -2,6 +2,7 @@
     <div class="row">
   
       <section class="col-3">
+        <ng-container *ngIf="types && brands">
         <h5 class="text-warning ml-3">Rusiavimas</h5>
         <select class="custom-select mb-3" (change)="onSortSelected($event.target.value)">
           <option>Rusiuoti pagal</option>
@@ -24,6 +25,7 @@
             <span class="badge bg-primary rounded-pill">14</span>
           </li>
         </ul>
+      </ng-container>
       </section>
   
       <section class="col-9">
